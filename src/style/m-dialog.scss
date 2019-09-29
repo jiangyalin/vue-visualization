@@ -1,0 +1,86 @@
+/*模态框默认样式*/
+// 未来皮肤
+//$m-d-border-top: 1px solid #e0e0e0;
+//$m-d-he-background-color: #f0f0f0;
+//$m-d-he-padding-top: 0;
+//$m-d-he-padding-bottom: 0;
+//$m-d-he-line-height: 50px;
+//$m-d-foo-padding-top: 15px;
+//$m-d-foo-padding-bottom: 15px;
+//$m-d-bd-padding-top: 30px;
+//$m-d-bd-padding-bottom: 10px;
+//$m-d-item-margin-bottom: 33px;
+
+// 适应当前
+$m-d-border-top: 0;
+$m-d-he-background-color: #fff;
+$m-d-he-padding-top: 20px;
+$m-d-he-padding-bottom: 10px;
+$m-d-he-line-height: 0;
+$m-d-foo-padding-top: 10px;
+$m-d-foo-padding-bottom: 20px;
+$m-d-bd-padding-top: 10px;
+$m-d-bd-padding-bottom: 10px;
+$m-d-item-margin-bottom: 18px;
+
+.m-dialog-box {
+  .el-dialog__header {
+    padding-top: $m-d-he-padding-top;
+    padding-bottom: $m-d-he-padding-bottom;
+    height: 50px;
+    line-height: $m-d-he-line-height;
+    background-color: $m-d-he-background-color;
+    box-sizing: border-box;
+
+    .el-dialog__headerbtn {
+      //margin-bottom: 3px;
+    }
+  }
+
+  .el-dialog__body {
+    padding-top: $m-d-bd-padding-top;
+    padding-bottom: $m-d-bd-padding-bottom;
+
+    .el-form-item {
+      position: relative;
+      margin-bottom: $m-d-item-margin-bottom;
+
+      .el-form-item__label {
+        position: absolute;
+        top: 50%;
+        line-height: 16px;
+        transform: translateY(-50%);
+      }
+    }
+
+    .el-form--label-top {
+      .el-form-item {
+        margin-bottom: 22px;
+        .el-form-item__label {
+          position: relative;
+          line-height: 40px;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  .el-dialog__footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 65px;
+    text-align: center; /*未来皮肤需删除此项*/
+    border-top: $m-d-border-top;
+    box-sizing: border-box;
+
+    .el-button[data-type='submit'], .el-button[data-type='submit']:hover { /*未来皮肤需删除此项*/
+      padding: 0;
+      width: 120px;
+      height: 35px;
+      color: #fff;
+      line-height: 35px;
+      border: 0;
+      background-color: #f78755;
+    }
+  }
+}
